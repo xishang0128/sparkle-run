@@ -28,7 +28,7 @@ jobs:
           GOOS: windows
           GOAMD64: v1
           GOARCH: ${{ matrix.goarch }}
-        run: go build -ldflags "-H windowsgui" -o mihomo-party-run.exe
+        run: go build -ldflags "-H windowsgui" -o sparkle-run.exe
       - name: Update Tag
         uses: richardsimko/update-tag@v1
         with:
@@ -41,4 +41,4 @@ jobs:
           name: ${{ matrix.arch }}
           tag_name: ${{ matrix.arch }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: mihomo-party-run.exe
+          files: sparkle-run.exe

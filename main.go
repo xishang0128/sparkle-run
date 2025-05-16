@@ -20,7 +20,7 @@ var (
 	mbOk            = uintptr(0)
 	mbIconError     = uintptr(0x10)
 	messageBoxFlags = mbOk | mbIconError
-	messageBoxTitle = "Mihomo Party Runner"
+	messageBoxTitle = "Sparkle Runner"
 	paramFileName   = "param.txt"
 )
 
